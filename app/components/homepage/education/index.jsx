@@ -28,11 +28,8 @@ function Education() {
       {/* Education Cards - Centered */}
       <div className="flex flex-col items-center justify-center gap-6 py-8">
         {educations.map((education) => (
-          <div className="w-full max-w-xl">
-            <GlowCard
-              key={education.id}
-              identifier={`education-${education.id}`}
-            >
+          <div key={education.id} className="w-full max-w-xl">
+            <GlowCard identifier={`education-${education.id}`}>
               <div className="p-3 relative text-white w-full">
                 {/* Date */}
                 <div className="flex justify-center mb-2">
