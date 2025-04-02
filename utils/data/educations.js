@@ -1,20 +1,14 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "MSc. Computer Science",
+    duration: "Graduation Date: Jan 2024",
+    institution: "Coventry University, Coventry, United Kingdom",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "BE. Computer Science",
+    duration: "Graduation Date: Jun 2022",
+    institution: "University of Mumbai, Mumbai, India",
   },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
-  }
-]
+];

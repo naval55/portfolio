@@ -1,37 +1,55 @@
-import { projectsData } from '@/utils/data/projects-data';
-import ProjectCard from './project-card';
+import { projectsData } from "@/utils/data/projects-data";
+import ProjectCard from "./project-card";
 
 const Projects = () => {
-
   return (
-    <div id='projects' className="relative z-50  my-12 lg:my-24">
-      <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
-        <div className="flex items-center justify-start relative">
-          <span className="bg-[#1a1443] absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
-            PROJECTS
-          </span>
-          <span className="w-full h-[2px] bg-[#1a1443]"></span>
-        </div>
-      </div>
+    <section id="projects" className="py-16 bg-transparent">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* 🔥 Projects Title with Glow and Divider */}
+        <div className="relative flex justify-center my-5 lg:py-8">
+          {/* Glow effect behind title */}
+          <div className="w-[100px] h-[100px] bg-violet-500 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-20 z-0"></div>
 
-      <div className="pt-24">
-        <div className="flex flex-col gap-6">
-          {projectsData.slice(0, 4).map((project, index) => (
-            <div
-              id={`sticky-card-${index + 1}`}
-              key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
-            >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCard project={project} />
-              </div>
-            </div>
+          {/* Centered title with lines */}
+          <div className="flex items-center gap-4 z-10">
+            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+            <span className="bg-[#1a1443] w-fit text-white px-5 py-2 text-xl rounded-md">
+              Projects
+            </span>
+            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          </div>
+        </div>
+
+        {/* 💻 Project Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map((project, idx) => (
+            <ProjectCard key={idx} project={project} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Projects;
+
+// import { projectsData } from "@/utils/data/projects-data";
+
+// const Projects = () => {
+//   return (
+//     <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-900">
+//       <div className="max-w-6xl mx-auto px-4">
+//         <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
+//           Projects
+//         </h2>
+
+//         {/* Fresh layout will go here in next step */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+//           {/* placeholder */}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Projects;

@@ -1,52 +1,32 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
+  {
+    name: "Food Ordering Application",
+    timeline: "Dec 2024 – Mar 2025",
+    role: "Full Stack Developer",
+    tools: ["Node.js", "Express.js", "React.js", "Context API"],
+    highlights: [
+      "Enhanced user engagement by 35% and reduced order processing times by 25% by developing a full-stack food ordering app.",
+      "Strengthened data security and efficiency by integrating middleware and utilizing React Context API for state management.",
+    ],
+  },
+  {
+    name: "Impact of Twitter Sentiment on Bitcoin Price",
+    timeline: "Oct 2023 – Dec 2023",
+    role: "Machine Learning Engineer",
+    tools: ["Python", "VADER", "GANs"],
+    highlights: [
+      "Elevated Bitcoin price prediction accuracy by 25% through sentiment analysis and GANs, achieving 83% accuracy.",
+      "Developed ML-driven trading strategies that increased profitability by 15% by analyzing social media sentiment.",
+    ],
+  },
+  {
+    name: "Memory Game – Android App",
+    timeline: "May 2023 – Aug 2023",
+    role: "Android Developer",
+    tools: ["Kotlin", "XML", "Firebase"],
+    highlights: [
+      "Augmented user retention by 35% and engagement by 20% through a Kotlin-based Android memory game.",
+      "Designed intuitive mechanics, responsive UI, and implemented a competitive leaderboard.",
+    ],
+  },
 ];
-
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-// },
