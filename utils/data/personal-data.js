@@ -3,7 +3,7 @@ export const personalData = {
   profile: "/profile.png",
   designation: "Software Developer",
   description:
-    "Developer with hands-on experience in building full-stack web apps using React, Node.js, and MongoDB. I love turning ideas into clean, functional code and continuously learning new tools.",
+    "Full-stack developer with hands-on experience building scalable, data-driven applications using modern JavaScript frameworks like React.js and Node.js. Skilled in frontend/backend integration, API development, and cloud-based deployment. Passionate about clean code, practical problem solving, and continuously learning new tools to deliver user-focused solutions.",
   email: "navalchawan2@gmail.com",
   phone: "+447810141797",
   linkedIn: "https://www.linkedin.com/in/naval-kishan-chawan/",

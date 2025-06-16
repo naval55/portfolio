@@ -44,29 +44,29 @@ function Experience() {
               {experiences.map((exp, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-[#1a1443] to-[#2c1a5b] border border-[#2e2e2e] rounded-2xl p-6 shadow-lg hover:shadow-violet-700/50 transition duration-300"
+                  className="bg-gradient-to-br from-[#1a1443] to-[#3a1c75] border border-[#3e3a5a] rounded-3xl p-8 shadow-xl hover:shadow-violet-600/40 hover:scale-[1.02] transition-all duration-300"
                 >
-                  <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-white text-center">
+                  <div className="mb-4 space-y-1">
+                    <h3 className="text-xl font-semibold text-white text-center">
                       {exp.title}
                     </h3>
-                    <p className="text-sm text-center text-white/70">
+                    <p className="text-sm text-white/80 text-center">
                       {exp.company}
                     </p>
-                    <p className="text-xs text-center text-white/50">
+                    <p className="text-xs text-white/60 italic text-center">
                       {exp.duration}
                     </p>
                   </div>
 
-                  <div>
-                    <h4 className="text-sm font-medium text-[#00ffd1] mb-2">
-                      Achievements:
-                    </h4>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-white/90">
-                      {exp.back.map((point, idx) => (
-                        <li key={idx}>{point}</li>
-                      ))}
-                    </ul>
+                  <div className="flex flex-col items-center space-y-3 mt-6">
+                    {exp.back.map((point, idx) => (
+                      <p
+                        key={idx}
+                        className="text-sm text-white/90 text-center leading-relaxed"
+                      >
+                        {point}
+                      </p>
+                    ))}
                   </div>
                 </div>
               ))}

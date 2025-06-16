@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: "Food Ordering Application",
-    timeline: "Dec 2024 – Mar 2025",
+    timeline: "Nov 2024 – Dec 2024",
     role: "Full Stack Developer",
     tools: ["Node.js", "Express.js", "React.js", "Context API"],
     highlights: [
